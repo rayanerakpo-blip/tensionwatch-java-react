@@ -1,0 +1,21 @@
+# Dépendances
+**/node_modules/
+
+# Build
+/backend/target/
+/frontend/dist/
+/frontend/build/
+
+# Configuration locale
+.env
+.env.*
+application-local.yml
+
+# Journaux
+*.log
+
+# IDE / système
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

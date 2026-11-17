@@ -1,0 +1,13 @@
+package com.tensionwatch.repository;
+
+import com.tensionwatch.model.Medicament;
+import com.tensionwatch.model.Patient;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface MedicamentRepository extends JpaRepository<Medicament, Long> {
+    List<Medicament> findByPatientOrderByDateDebutDesc(Patient patient);
+}
